@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
 .item {
@@ -26,17 +25,33 @@
     align-items: center;
 }
 
+.box {
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .item1 {
-    
+
 }
 
 .item2 {
-    flex: 1 0 200px;
+    background-color: darkgray;
+    flex: 1 0 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .item3 {
 
 }
-
 
 
