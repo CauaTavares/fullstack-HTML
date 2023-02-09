@@ -1,7 +1,28 @@
-const nome = prompt("Primeiro nome")
-const sobrenome = prompt("Segundo nome")
-const escola = prompt("O campo de estudo")
-const nasc = prompt("O ano de nascimento")
+// const valor1 = prompt("Primeiro valor") 
+// const valor2 = prompt("Segundo valor") 
 
 
-window.alert (nome + " " + sobrenome + " " + escola + " " + nasc)
+// window.alert(valor1 + valor2)
+// window.alert(valor1- valor2)
+// window.alert(valor1 * valor2)
+// window.alert(valor1 / valor2)
+
+
+const entrada1 = prompt("Informe o primeiro numero:")
+const entrada2 = prompt("Informe o segundo numero:")
+
+const x = parseFloat(entrada1)
+const y = parseFloat(entrada2) 
+
+const soma = x + y
+const subtracao = x - y
+const multiplicacao = x * y
+const divisao = x / y
+
+alert(
+    "Resultados:\n" + 
+    "\nSoma: " + soma + 
+    "\nSubtração: " + subtracao + 
+    "\nMultiplicação: " + multiplicacao + 
+    "\nDivisão: " + divisao 
+)
