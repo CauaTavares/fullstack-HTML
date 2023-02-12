@@ -22,3 +22,5 @@ if (forca > defesa && escudo == false) {
 vida = vida - dano
 
 alert(name1 + "\nFORÇA: " + forca + "\n\n" + name2 + "\nVida: " + vida + "\nDefesa: " + defesa)
+
+
