@@ -7,12 +7,10 @@ const y = parseFloat(quantia)
 
 
 do {
-    opcao = prompt("tu tenes " + "R$" + soma + " de dinheiro " + "gostaria de: " + "\n1) adicionar \n2) remover" + "\n3) sair")
+    opcao = prompt("tu tenes " + "R$" + dinheiro + " de dinheiro " + "gostaria de: " + "\n1) adicionar \n2) remover" + "\n3) sair")
     if (opcao == 1) {
         quantia = prompt("Qual quantia gostaria de adicionar?")
-        // let x = parseFloat(dinheiro)
-        // let y = parseFloat(quantia)
-        let soma = x += y 
+        let soma = x + y 
         alert(soma)
     } else if (opcao == 2) {
         quantia = prompt("Qual quantia gostaria de remover?")
