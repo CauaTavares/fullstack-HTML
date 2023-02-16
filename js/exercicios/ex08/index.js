@@ -1,20 +1,19 @@
-let dinheiro = prompt("quanto de dinheiro tu tenes?")
+let dinheiro = Number(prompt("quanto de dinheiro tu tenes?"))
 let opcao = 0
 let quantia = 0
-
-const x = parseFloat(dinheiro)
-const y = parseFloat(quantia)
 
 
 do {
     opcao = prompt("tu tenes " + "R$" + dinheiro + " de dinheiro " + "gostaria de: " + "\n1) adicionar \n2) remover" + "\n3) sair")
+
     if (opcao == 1) {
-        quantia = prompt("Qual quantia gostaria de adicionar?")
-        let soma = x + y 
-        alert(soma)
+        quantia = Number(prompt("Qual quantia gostaria de adicionar?"))
+        dinheiro += quantia
+        alert(dinheiro)
     } else if (opcao == 2) {
         quantia = prompt("Qual quantia gostaria de remover?")
-        alert(dinheiro -= quantia)
+        dinheiro -= quantia
+        alert(dinheiro)
     }
 } while (opcao < 3)
 

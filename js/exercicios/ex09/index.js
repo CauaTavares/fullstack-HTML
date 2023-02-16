@@ -1,12 +1,11 @@
 let indice = 0
+let resultado = 0
 
 
-
-for(
-    let numero = Number(prompt("informe um numero"));
-    indice < 20;
-    numero *= indice
-) {
+for (let numero = prompt("Informe um numero:"); 
+    indice <= 20; 
     indice++
-    alert("indice = " + indice)
+) {
+    resultado = numero * indice
+    alert(numero + " * " + indice + " = " + resultado)
 }
