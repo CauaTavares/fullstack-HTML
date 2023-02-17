@@ -1,16 +1,17 @@
-let palavra = ""
+let palavra = prompt("Informe uma palavra:")
+let palavraInversa = ""
 
 
-
-
-for (palavra = prompt("Informe uma palavra: ");
-    palavra ;
-    palavra++
+for (
+    let index = (palavra.length - 1);
+    index >= 0;
+    index--
 ) {
-    alert(palavra)
+    palavraInversa += palavra[index]
 }
 
-
-david
-
-
+if(palavraInversa == palavra) {
+    alert("Isso é um palindromo: " + palavra)
+} else {
+    alert("A Palavra não é um palindromo: " + "\n" + palavra + "\n" + palavraInversa)
+}
