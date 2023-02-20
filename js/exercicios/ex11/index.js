@@ -8,12 +8,12 @@ do {
         let nome = prompt("Informe o nome do paciente que gostaria de adicionar:")
         nome = arr.push(nome)
     } else if (opcao == 2) {
-        let ultimoElemento = arr.shift()
-        alert("Você removeu o paciente: " + ultimoElemento)
+        let removerPaciente = arr.shift()
+        alert("Você removeu o paciente: " + removerPaciente)
     }
 
 } while (opcao < 3)
 
-alert("Programa encerrado CARALHO")
+alert("Programa encerrado.")
 
 
