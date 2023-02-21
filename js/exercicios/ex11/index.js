@@ -1,9 +1,4 @@
-let arr = [
-    "1º caua", "\n"
-    "2º nathalia", "\n",
-    "3º tavares", "\n",
-    "4º valente", "\n"
-]
+let arr = ["valente", "nathalia", "tavares"]
 let opcao = ""
 
 

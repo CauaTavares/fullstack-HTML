@@ -19,6 +19,7 @@ console.log(arr);
 console.log(ultimoElemento);
 
 // shift
+// REMOVE TODOS OS PRIMEIROS
 ultimoElemento = arr.shift()
 console.log(arr);
 console.log(ultimoElemento);
