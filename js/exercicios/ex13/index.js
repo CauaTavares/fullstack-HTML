@@ -1,30 +1,34 @@
-let arr = [
-    "1º Imóvel",
-    ["2º Imóvel", 2, "true"],
-    [
-        ["caua", 1, 2, "sim"]
-    ]
-]
-
-let pessoa = {}
-
+let arr = []
 let opcao = ""
 
 
-do {
-    opcao = prompt(arr + pessoa + "\n" + "Escolha uma opção:" + "\n1) Salvar um imovel" + "\n2) Mostrar todos" + "\n3) Sair")
+ do {
+    opcao = prompt("Imoveis cadastrados: " + arr.length + "\n" + "Escolha uma opção:" + "\n1) Salvar um imovel" + "\n2) Mostrar todos" + "\n3) Sair")
 
-
-    if (opcao == 1) {
-        pessoa.colegas = prompt("Nome do proprietario")
-        pessoa.colegas = prompt("Quantidade de quartos")
-        pessoa.colegas = prompt("Quantidade de banheiros")
-        pessoa.colegas = prompt("Possui garagem")
-    } else if (opcao == 2) {
-
+    if (arr.length > 0) {
+        opcao
     }
 
-} while (opcao < 3)
+    if (opcao == 1) {
+        let pessoa = {}
+        let nome = prompt("Nome do proprietario:")
+        let quartos = prompt("Quantidade de quarto/s:")
+        let banheiro = prompt("Quantidade de banheiro/s:")
+        let garagem = prompt("Quantidade de garagem/ns:")
+
+        pessoa.nome = nome
+        pessoa.quartos = quartos
+        pessoa.banheiro = banheiro
+        pessoa.garagem = garagem
+        arr.push(pessoa)
+        alert("Você adicionou o imovel: " + "\nNOME: " + nome + "\nQUARTOS: " + quartos + "\nBANHEIROS: " + banheiro + "\nGARAGEM: "+ garagem)
+
+    } else if (opcao == 2) {
+        
+    }
+
+} while (opcao !== "3")
+
 
 alert("FECHOU..........")
 
