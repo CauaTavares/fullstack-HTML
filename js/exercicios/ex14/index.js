@@ -20,7 +20,7 @@ do {
         let resultado = triangulo(base, altura)
         alert("A área de um triangulo é somada " + base + " * " + altura + " / " + 2 + " Que da: " + resultado)
 
-    }else if (opcao == 2) {
+    } else if (opcao == 2) {
         function retangulo(base, altura) {
             let area = (base * altura)
             return area
@@ -30,7 +30,7 @@ do {
         let resultado = retangulo(base, altura)
         alert("A área do retângulo é: " + base + " * " + altura + " Que da: " + resultado)
 
-    }else if (opcao == 3) {
+    } else if (opcao == 3) {
         function quadrado(a) {
             let area = (a * a)
             return area
@@ -39,7 +39,7 @@ do {
         let resultado = quadrado(a)
         alert("A área do retangulo é: " + a + " * " + a + " Que da: " + resultado)
 
-    }else if (opcao == 4) {
+    } else if (opcao == 4) {
         function trapezio(baseMaior, baseMenor, altura) {
             let area = ((baseMaior + baseMenor) * altura / 2)
             return area
@@ -50,7 +50,7 @@ do {
         let resultado = trapezio(baseMaior, baseMenor, altura)
         alert("A área do trapézio é: " + resultado)
 
-    }else if (opcao == 5) {
+    } else if (opcao == 5) {
         function circulo(raio) {
             let area = ((raio * raio) * 3.14)
             return area
