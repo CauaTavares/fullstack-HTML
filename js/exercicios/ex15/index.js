@@ -12,7 +12,7 @@ do {
     )
 
     if (opcao == 1) {
-        function criarVaga() {
+        function criarVaga(nome, descricao, data) {
 
         }
         let nome = prompt("Insira o nome da vaga: ")

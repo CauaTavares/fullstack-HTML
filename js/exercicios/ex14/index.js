@@ -1,7 +1,8 @@
 let opcao = ""
 
 do {
-    opcao = prompt("Escolha uma das opções: " +
+    opcao = prompt(
+    "Escolha uma das opções:" +
     "\n1) área do triângulo:" +
     "\n2) área do retângulo:" +
     "\n3) área do quadrado:" +
@@ -51,7 +52,7 @@ do {
         alert("A área do trapézio é: " + resultado)
 
     } else if (opcao == 5) {
-        function circulo(raio) {
+        function circulo(raio ) {
             let area = ((raio * raio) * 3.14)
             return area
         }
