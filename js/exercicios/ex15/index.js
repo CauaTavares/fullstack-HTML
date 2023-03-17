@@ -1,41 +1,58 @@
-let opcao = ""
+function listarVagasDisponiveis() {
+    const base = prompt("Informe pa")
+}
 
-do {
-    opcao = prompt(
-        "Escolha uma das opções: " +
-        "\n1) Listar vagas disponiveis:" +
-        "\n2) Criar uma nova vaga:" +
-        "\n3) Visualizar uma vaga:" + 
-        "\n4) Inscrever um candidado em uma vaga:" +
-        "\n5) Excluir uma vaga:" +
-        "\n6) Sair"
+function criarUmaNovaVaga() {
+    const nome = prompt("Informe o nome da vaga:")
+    const descricao = prompt("Informe uma descrição para a vaga:")
+    const data = prompt("E a data limite:")
+    let soma = nome + descricao + data
+    const confirmacao = confirm(
+        "Gostaria de salvar essa vaga?\n" + soma
     )
+}
 
-    if (opcao == 1) {
-        function criarVaga(nome, descricao, data) {
+function visualizarUmaVaga() {
+    const indice = prompt("Informe o indice da vaga que gostaria de visualizar:")
+}
+
+
+
+
+
+
+
+
+function exibirMenu() {
+    return prompt (
+        "Vagas De Emprego\n" +
+        "1. Listar vagas disponiveis\n" +
+        "2. Criar uma nova vaga\n" + 
+        "3. Visualizar uma vaga\n" +
+        "4. inscrever um candidato em uma vaga\n" +
+        "5. Excluir uma vaga\n" +
+        "6. Sair\n"
+    ) 
+}
+
+function executar() {
+    let opcao = ""
+
+    do {
+        opcao = exibirMenu()
+        let resultado
+
+        if (opcao == 1) {
+            resultado = listarVagasDisponiveis()
+
+        } else if(opcao == 2) {
+            resultado = criarUmaNovaVaga()
+            
+        } else if(opcao == 3) {
+            resultado = visualizarUmaVaga()
 
         }
-        let nome = prompt("Insira o nome da vaga: ")
-        let descricao = prompt("Insira uma breve descrição:")
-        let data = prompt("E uma data limite:")
-        confirm(
-            "Gostaria de salvar essa vaga?" +
-            "\n" + nome +
-            "\n" + descricao +
-            "\n" + data
-        )
-    }
+    } while (opcao !== "6")
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-}while (opcao !== "6")
+executar()

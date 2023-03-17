@@ -7,7 +7,9 @@ do {
         mensagem += (i+1) + "º - " + arr[i] + "\n"
     }
 
-    opcao = prompt(mensagem + "\n" + "Escolha uma das opções: \n1) Novo paciente \n2) Consultar paciente \n3) Sair")
+    opcao = prompt(
+        mensagem + "\n" + 
+        "Escolha uma das opções: \n1) Novo paciente \n2) Consultar paciente \n3) Sair")
     if (opcao == 1) {
         let nome = prompt("Informe o nome do paciente que gostaria de adicionar:")
         nome = arr.push(nome)
