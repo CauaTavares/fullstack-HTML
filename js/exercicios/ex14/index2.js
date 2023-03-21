@@ -5,7 +5,7 @@ function calcularAreaTriangulo() {
 }
 
 function calcularAreaRetangulo() {
-    const base = prompt("Innforme a base do retângulo:")
+    const base = prompt("Informe a base do retângulo:")
     const altura = prompt("Informe a altura do retângulo:")
     return base * altura
 }

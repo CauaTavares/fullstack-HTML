@@ -1,18 +1,33 @@
+let lista = ["bombeiro"]
+
+
 function listarVagasDisponiveis() {
-    const base = prompt("Informe pa")
+    let a = prompt(lista.forEach(listarVagasDisponiveis))
 }
 
 function criarUmaNovaVaga() {
     const nome = prompt("Informe o nome da vaga:")
     const descricao = prompt("Informe uma descrição para a vaga:")
     const data = prompt("E a data limite:")
-    let soma = nome + descricao + data
+
     const confirmacao = confirm(
-        "Gostaria de salvar essa vaga?\n" + soma
+        "Gostaria de salvar essa vaga?\n" +
+        "\nNome: " + nome +
+        "\nDescrição: " + descricao + 
+        "\nData: " + data
     )
+
+        let obj = {
+            name: nome, descricao: descricao, data: data 
+        }
+
+    if (confirmacao) {
+        lista.push(obj)
+        alert("Imovel salvo com sucesso!")
+    }
 }
 
-function visualizarUmaVaga() {
+function visualizarVagas() {
     const indice = prompt("Informe o indice da vaga que gostaria de visualizar:")
 }
 
