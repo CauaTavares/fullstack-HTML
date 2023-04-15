@@ -11,7 +11,7 @@
 
   <div>
     <label for="onMouseEnter">Entrada do Mouse:</label>
-    <input type="text" id="onMouseEnter" onmouseenter="console.log('Entrada do mouse');">
+    <input type="text" id="onMouseEnter" onmouseenter="onMouseEnter()">
   </div>
   <br>
   <div>
@@ -29,7 +29,7 @@
     <input type="text" id="onBlur" onblur="console.log('Desfocado o elemento');">
   </div>
   <br>
-  <button onclick="console.log('Clicou no botão');">
+  <button onclick="onClick()">
     Clique-me!
   </button>
 </body>
