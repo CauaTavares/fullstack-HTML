@@ -19,6 +19,20 @@ function addplayer() {
 
     document.getElementById('team-list').appendChild(jogador)
 
+    const confirmacao = confirm("Escalar " + name + " como " + position + "?")
+
+    if (confirmacao) {
+        const teamList = document.getElementById('teamList')
+        const playerItem = document.createElement('li')
+        playerItem.id = 'player-' + number
+        playerItem.innerText = position + ": " + name + "(" + number + ")"
+        teamList.appendChild(playerItem)
+
+        document.getElementById('position').value = ''
+        document.getElementById('name').value = ''
+        document.getElementById('number').value = ''
+    }
+
 }
 
 function removePlayer() {
@@ -29,8 +43,13 @@ function removePlayer() {
     const playerToRemove = document.getElementById('number-' + number)
 
     lista.removeChild(playerToRemove)
-    console.log(lista);
-    console.log(playerToRemove);
+    
+    const confirmation = confirm('Remover o jogador ' + playerToRemove.innerText + '?')
 
+
+    if (confirmation) {
+        playerToRemove.remove()
+        document.getElementById('numberToRemove').value = ''
+    }
 }
 
