@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <h1>Jogo da Velha</h1>
@@ -20,16 +20,16 @@
 
     <button id="start" >Começar!</button>
     <h2>Vez de: <span id="turnPlayer"></span></h2>
-    <section>
-        <span data-regian="0.0"></span>
+    <section id="gameBoard">
+        <span data-regian="0.0">X</span>
         <span data-regian="0.1"></span>
         <span data-regian="0.2"></span>
         <span data-regian="1.0"></span>
-        <span data-regian="1.1"></span>
+        <span data-regian="1.1">X</span>
         <span data-regian="1.2"></span>
         <span data-regian="2.0"></span>
-        <span data-regian="2.1"></span>
-        <span data-regian="2.2"></span>
+        <span data-regian="2.1">O</span>
+        <span data-regian="2.2">X</span>
     </section>
 </body>
 </html>
