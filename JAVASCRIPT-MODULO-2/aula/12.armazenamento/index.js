@@ -30,4 +30,3 @@ document.getElementById('cookieBtn').addEventListener('click', function () {
     input.value = ''
     // console.log(document.cookie)
   })
-  

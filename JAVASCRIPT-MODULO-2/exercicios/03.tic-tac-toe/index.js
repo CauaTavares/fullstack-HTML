@@ -19,10 +19,16 @@ function initializeGame() {
     })
 }
 
+function disebleRegion(element) {
+    element.style.cursor = 'default'
+    element removeEventListener('click', handleBoardClick)
+}
+
 function handleBoardClick(ev) {
     const span = ev.currentTarget
     const region = span.dataset.region // N.N
-    const rowColumnPair = region // ["N", "N"]
+    const rowColumnPair = region.split('.') // ["N", "N"]
+    console.log(region);
     const row = rowColumnPair[0]
     const column = rowColumnPair[1]
     if (turnPlayer === 'player1') {
@@ -34,6 +40,7 @@ function handleBoardClick(ev) {
     }
     console.clear()
     console.table(vBoard)
+    disebleRegion(span)
 }
 
 
