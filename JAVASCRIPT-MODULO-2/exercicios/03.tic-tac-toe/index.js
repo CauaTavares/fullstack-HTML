@@ -15,6 +15,7 @@ function initializeGame() {
     boardRegions.forEach(function (element) {
         element.classList.remove('win')
         element.innerText = ''
+        element.classList.add('cursor-pointer')
         element.addEventListener('click', handleBoardClick)
     })
 }
@@ -41,8 +42,16 @@ function getWinRegions() {
 }
 
 function disebleRegion(element) {
-    element.style.cursor = 'default'
+    element.classList.remove('cursor-pointer')
     element.removeEventListener('click', handleBoardClick)
+}
+
+function handleWin(regions) {
+    regions.forEach(function (region) {
+        document.querySelector('[data-region="' + region +'"]').classList.add('win')
+    })
+    const playerName = document.getElementById(turnPlayer).value
+    document.querySelector('h2').innerHTML = playerName + ' Venceu!'
 }
 
 function handleBoardClick(ev) {
@@ -63,10 +72,12 @@ function handleBoardClick(ev) {
     disebleRegion(span)
     const winRegions = getWinRegions()
     if (winRegions.length > 0) {
-        console.log("VENCEU");
+        handleWin(winRegions)
     }else if (vBoard.flat().includes('')) {
         turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
         updateTitle()
+    }else {
+        document.querySelector('h2').innerHTML = 'Empate!'
     }
 }
 
