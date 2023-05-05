@@ -28,5 +28,5 @@ document.getElementById('cookieBtn').addEventListener('click', function () {
     const path = 'path=/;'
     document.cookie = cookie + expiration + path
     input.value = ''
-    // console.log(document.cookie)
-  })
+    console.log(document.cookie)
+  })    
